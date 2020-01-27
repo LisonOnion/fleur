@@ -1,0 +1,207 @@
+body {
+    margin:0;
+}
+
+@font-face {
+      font-family: "WildFlowerBold";  
+      src: url('../font/WildFlowerBold.ttf'); 
+}
+
+header {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../img/fdb.jpg");
+    background-size: cover; 
+    background-attachment: fixed;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+
+li {
+    font-family: "Montserrat";
+    color: #517f41;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+nav h1 {
+    font-family: "WildFlowerBold";
+    color: #517f41;
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+header div h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 54pt;
+    color: white;
+    border:3px dotted white;
+    padding: 10px;
+    background-color: rgba(81, 127, 65, 0.50);
+
+}
+
+main h1 {
+    text-align: center;
+    font-family: "Courgette", cursive;
+    color: #517f41;
+}
+
+main p {
+    text-align: justify;
+}
+
+main .col-sm {
+    text-align: center;
+}
+
+main i {
+    color: #517f417d;
+}
+#slogan
+{
+    height:50vh;
+    width: 100vw;
+    background-image: url("../img/bg3.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+
+}
+
+#slogan div {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border: 2px dotted white;
+background-color:  rgba(81, 127, 65, 0.50);
+padding: 10px;
+
+}
+
+#slogan div h1 {
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 20pt;
+}
+
+#team {
+    text-align: center;
+}
+
+#team img {
+    height: 15vw;
+    width: 15vw;
+    border-radius: 50%;   
+     display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#team figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #517f41;
+    height: 17vw;
+    width: 17vw;
+}
+
+
+#team figure div {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-out ;
+    height: 13vw;
+    width: 13vw;
+    border-radius: 50%;
+    background-color:  rgba(81, 127, 65, 0.50);
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    color: white;
+}
+
+#team figure div:hover {
+    opacity: 1;
+}
+
+#team h1 {
+    font-family: "Courgette", cursive;
+    color: #517f41;
+}
+
+#team h4 {
+    font-family: "Courgette", cursive;
+    color: black;
+}
+
+#team h6 {
+    font-family: "Montserrat";
+}
+
+#slider {
+    height:50vw;
+    width: 100vw;
+    background-image: url("../img/bg2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#slider ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#slider li {
+    height: 300px;
+    width: 300px;
+}
+
+#quams {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#quams h1 {
+    font-family: "Courgette", cursive;
+    color: #517f41;
+}
+
+#quams img {
+    height: 20vw;
+    width: 20vw;
+}
+
