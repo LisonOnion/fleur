@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/glide.core.min.css">
     <link rel="stylesheet" href="css/glide.theme.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Montserrat&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/545bde3ef6.js" crossorigin="anonymous"></script>
@@ -22,6 +24,7 @@
                 <li>Team</li>
                 <li>Quams</li>
                 <li>Contact</li>
+                <li id="burger"><i class="fas fa-bars"></i></li>
             </ul>
         </nav>
 
@@ -33,7 +36,7 @@
 
 <!--About Us-->
     <main>
-        <h1>About Us</h1>
+        <h1 data-aos="fade-up" data-aos-anchor-placement="center-bottom">About Us</h1>
             <div class="container">
                     <div class="row">                        
                       <div class="col-sm"> 
@@ -63,7 +66,7 @@
 
 <!--Team-->
     <section id="team" class="container">
-        <h1>Team</h1>
+        <h1 data-aos="fade-up" data-aos-anchor-placement="center-bottom">Team</h1>
                 <div class="row">
                       <div class="col-md-3">
                         <figure>
@@ -138,45 +141,66 @@
 
 <!--Quams-->
 <section id="quams" class="container-imagesfleurs">
-    <h1>QUAMS</h1>
+    <h1 data-aos="fade-up" data-aos-anchor-placement="center-bottom">QUAMS</h1>
         <div class="row">
-                <div class="col-md-3">
-                    <img src="img/fleur/f1.png">
+                <div class="col-md-4">
+                    <a data-fancybox="gallery" href="img/fleur/f1.png"><img src="img/fleur/f1.png"></a>
                 </div>
-                <div class="col-md-3">
-                    <img src="img/fleur/f2.jpg">
+                <div class="col-md-4">
+                    <a data-fancybox="gallery" href="img/fleur/f2.jpg"><img src="img/fleur/f2.jpg"></a>
                 </div>
-                <div class="col-md-3">
-                    <img src="img/fleur/f3.jpg">
+                <div class="col-md-4">
+                    <a data-fancybox="gallery" href="img/fleur/f3.jpg"><img src="img/fleur/f3.jpg"></a>
                 </div>
-        </div>
+                </div>
         <div class="row">
-                <div class="col-md3">
-                    <img src="img/fleur/f4.jpg">
+                <div class="col-md-4">
+                    <a data-fancybox="gallery" href="img/fleur/f4.jpg"><img src="img/fleur/f4.jpg"></a>
                 </div>
-                <div class="col-md3">
-                     <img src="img/fleur/f5.jpg">
+                <div class="col-md-4">
+                    <a data-fancybox="gallery" href="img/fleur/f5.jpg"><img src="img/fleur/f5.jpg"></a>
                 </div>
-                <div class="col-md3">
-                    <img src="img/fleur/f6.jpg">
+                <div class="col-md-4">
+                    <a data-fancybox="gallery" href="img/fleur/f6.jpg"><img src="img/fleur/f6.jpg"></a>
                 </div>
         </div>
 </section>
+<!--End--Quams-->
 
+<!--Contact-->
+<footer>
+
+    <h1 class="shake">Contact</h1>
+
+</footer>
+<!--End--Contact-->
 
 
 
 
  <script src="js/jquery.js"></script>   
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+ <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
  <script src="js/glide.min.js"></script>
+
+<!--Script caroussel-->
 <script>
-        const config = {
-            type: 'caroussel',
-            perView: 3
-        };
-        new Glide('.glide', config).mount()
+new Glide('.glide', {
+    type: 'carousel',
+    perView: 3,
+    breakpoints: {
+        750: {
+            perView: 1
+        }
+    }
+}).mount();
 </script>
+<!--End--Script caroussel-->
+<script>
+    AOS.init();
+</script>
+
+
 </body>
 </html>

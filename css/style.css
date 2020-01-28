@@ -36,6 +36,10 @@ li {
     padding: 10px;
 }
 
+#burger {
+    visibility: hidden;
+}
+
 nav h1 {
     font-family: "WildFlowerBold";
     color: #517f41;
@@ -167,7 +171,7 @@ padding: 10px;
 }
 
 #slider {
-    height:50vw;
+    height:60vh;
     width: 100vw;
     background-image: url("../img/bg2.jpg");
     background-size: cover;
@@ -179,6 +183,7 @@ padding: 10px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
 }
 
 #slider li {
@@ -192,7 +197,8 @@ padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    text-align: center;   
+    padding: 10px;
 }
 
 #quams h1 {
@@ -203,5 +209,48 @@ padding: 10px;
 #quams img {
     height: 20vw;
     width: 20vw;
+
 }
+
+footer {
+    height:60vh;
+    width: 100vw;
+    background-color:  rgba(81, 127, 65, 0.50);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h1 {
+    border: dotted 2px white;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: "Montserrat";
+}
+
+.shake:hover{ 
+    animation: shake 100ms infinite;
+    animation-timing-function: linear;   
+  }
+  
+  @keyframes shake {
+    0% { transform: rotate(0.5deg); }
+    50% { transform: rotate(-0.5deg); }
+    100% { transform: rotate(0.5deg); }
+  }
+
+  @media (max-width: 750px) 
+  {
+ nav ul {
+     visibility: hidden;
+ }
+  
+ #burger {
+     visibility: visible;
+    
+ }
+  }
+
 
