@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/glide.core.min.css">
     <link rel="stylesheet" href="css/glide.theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Montserrat&display=swap" rel="stylesheet"> 
@@ -29,7 +30,7 @@
         </nav>
 
             <div>
-                <h1>Praeterea</h1>
+                <h1 class="rellax" data-rellax-speed="-7">Praeterea</h1>
             </div>
     </header>
 <!--End--Header-->
@@ -41,11 +42,11 @@
                     <div class="row">                        
                       <div class="col-sm"> 
                           <i class="fas fa-air-freshener"></i> 
-                           <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac ultricies diam, eget lobortis dui. Vestibulum pretium tempus velit nec sodales. Pellentesque porta eros a risus fringilla mattis. Morbi tempus erat quis arcu iaculis, ut vehicula arcu mollis. Phasellus id congue diam. Morbi eget purus tristique, cursus risus eget, accumsan orci. Curabitur et volutpat magna. In quis libero faucibus, porttitor odio nec, accumsan nibh. Proin nec scelerisque ante, ut dapibus sapien. Praesent ut nunc semper, ultricies magna quis, ullamcorper ipsum.</p>
+                           <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac ultricies diam, eget lobortis dui. Vestibulum pretium tempus velit nec sodales. Pellentesque porta eros a risus fringilla mattis. Morbi tempus erat quis arcu iaculis, ut vehicula arcu mollis. Phasellus id congue diam. Morbi eget purus tristique, cursus risus eget, accumsan orci. Curabitur et volutpat magna. In quis libero faucibus, porttitor odio nec, accumsan nibh.</p>
                       </div>
                       <div class="col-sm">  
                           <i class="fas fa-atom"></i>
-                            <p>Donec ut ante id nisi aliquet eleifend. Suspendisse tristique eleifend lectus, ut ultrices tellus convallis ut. Nam tincidunt libero nec lectus facilisis, eget laoreet sapien feugiat. Praesent porta nulla non sem lacinia, eu semper neque pulvinar. Nullam hendrerit nisl sed cursus laoreet. Pellentesque et luctus orci. Nullam posuere lacus blandit dolor gravida aliquet. Mauris nunc magna, scelerisque id nibh sit amet, malesuada vehicula ipsum. Fusce quis convallis est.</p> 
+                            <p>Donec ut ante id nisi aliquet eleifend. Suspendisse tristique eleifend lectus, ut ultrices tellus convallis ut. Nam tincidunt libero nec lectus facilisis, eget laoreet sapien feugiat. Praesent porta nulla non sem lacinia, eu semper neque pulvinar. Nullam hendrerit nisl sed cursus laoreet. Pellentesque et luctus orci. Nullam posuere lacus blandit dolor gravida aliquet. Mauris nunc magna, scelerisque id nibh sit amet, malesuada vehicula.</p> 
                       </div>
                       <div class="col-sm">
                           <i class="fab fa-envira"></i>
@@ -179,6 +180,7 @@
 
 
  <script src="js/jquery.js"></script>   
+ <script src="js/rellax.min.js"></script>
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -195,6 +197,9 @@ new Glide('.glide', {
         }
     }
 }).mount();
+</script>
+<script>
+var rellax = new Rellax('.rellax'); 
 </script>
 <!--End--Script caroussel-->
 <script>

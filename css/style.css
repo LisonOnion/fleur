@@ -19,6 +19,8 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content:space-between;
+    position: fixed;
+    width: 100vw;
 }
 ul {
     display: flex;
@@ -43,6 +45,7 @@ li {
 nav h1 {
     font-family: "WildFlowerBold";
     color: #517f41;
+    font-size: 2em;
 }
 
 header div {
@@ -52,10 +55,8 @@ header div {
     justify-content: center;
     height: 80%;
 }
-
 header div h1 {
     font-family: 'Dancing Script', cursive;
-    font-size: 54pt;
     color: white;
     border:3px dotted white;
     padding: 10px;
@@ -118,10 +119,9 @@ padding: 10px;
 #team img {
     height: 15vw;
     width: 15vw;
-    border-radius: 50%;   
-     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    text-align: center;
+    border-radius: 15vw;  
+    border: solid 5px #517f41; 
 }
 
 #team figure {
@@ -129,10 +129,7 @@ padding: 10px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    background-color: #517f41;
-    height: 17vw;
-    width: 17vw;
+    width: 100%;
 }
 
 
@@ -171,7 +168,6 @@ padding: 10px;
 }
 
 #slider {
-    height:60vh;
     width: 100vw;
     background-image: url("../img/bg2.jpg");
     background-size: cover;
@@ -189,10 +185,13 @@ padding: 10px;
 #slider li {
     height: 300px;
     width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 #quams {
-    height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -209,6 +208,7 @@ padding: 10px;
 #quams img {
     height: 20vw;
     width: 20vw;
+    margin: 10px;
 
 }
 
@@ -251,6 +251,21 @@ footer h1 {
      visibility: visible;
     
  }
+
+#team img {
+    height: 50vw;
+    width: 50vw;
+    border-radius: 50vw;  
+    border: solid 10px #517f41; 
+}
+
+#quams img {
+    height: 60vw;
+    width: 60vw;
+
+}
+
+
   }
 
 
